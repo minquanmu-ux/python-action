@@ -21,6 +21,6 @@ jobs:
         options: --onefile
     - name: Release
       uses: softprops/action-gh-release@v2
-      if: startswith(github.ref, 'pefs/tags/')
+      if: startswith(github.ref, 'refs/tags/')
       with:
           files: ./dist/**
